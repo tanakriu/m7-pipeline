@@ -13,6 +13,6 @@ resources:
       tasks:
         - task_key: print_new
           existing_cluster_id: ${var.cluster_id}
-          notebook_task:
+          spark_python_task:
             # Relative to THIS file (Module 5's rule), so ../src.
-            notebook_path: ../src/test_script.py
+            python_file: ../src/test_script.py
